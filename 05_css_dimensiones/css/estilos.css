@@ -1,15 +1,18 @@
 .tarjeta{
     box-shadow: 3px 4px 8px 0 rgba(0, 0, 0, 0.2);
     background-color: black;
-    min-width: 45%;
-    max-width: 35;
-    height: 120;
-    position: relative;
+    max-width: 25%;
+    min-width: 25%;
+    flex: 1;
 
 }
 
 .tarjeta p{
     font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+}
+
+.tarjeta h4{
     font-size: small;
 }
 
@@ -34,9 +37,9 @@
 }
 
 .box-container-row{
-    flex-flow: row;
-    justify-content: center;
-    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
     padding: 10px;
 }
 
