@@ -3,8 +3,6 @@
     background-color: black;
     max-width: 25%;
     min-width: 25%;
-    flex: 1;
-
 }
 
 .tarjeta p{
@@ -19,7 +17,6 @@
 .text-container{
     color: white;
     padding: 4px;
-
 }
 
 .ver-mas-btn{
