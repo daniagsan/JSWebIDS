@@ -1,46 +1,31 @@
-.tarjeta{
-    box-shadow: 3px 4px 8px 0 rgba(0, 0, 0, 0.2);
-    background-color: black;
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: space-around;
+}
+
+.card {
+    display: flex;
     max-width: 25%;
     min-width: 25%;
+    background: #eee;
+    padding: .6em 1em .6em .6em;
+    margin-bottom: 1em;
+    border-radius: .3em;
+    box-shadow: rgba(0, 0, 0, 0.2) 3px 6px 10px;
+    border: solid 1px #ccc;
+    justify-content: center;
+    align-items: center;
 }
 
-.tarjeta p{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: small;
+.img img{
+    width: 90%;
+    height: 50%;
+    border-radius: 10%;
+    max-width: 100%;
 }
 
-.tarjeta h4{
-    font-size: small;
-}
-
-.text-container{
-    color: white;
-    padding: 4px;
-}
-
-.ver-mas-btn{
-    font-family: 'Roboto';
-    font-weight: bold;
-    color: rgb(0, 0, 0);
-    background-color: rgb(255, 255, 255);
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-    text-decoration: none;
-}
-
-.tarjeta:hover .ver-mas-btn{
-    opacity: 1;
-}
-
-.box-container-row{
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    padding: 10px;
-}
-
-.destacado{
+.destacado {
     color: rgb(255, 255, 255);
     font-size: 70px;
     font-family: 'Roboto', Helvetica, Arial, sans-serif;
@@ -49,11 +34,9 @@
     background-color: rgb(0, 0, 0);
     margin: 0;
     padding: 0;
-}
+    }
 
-
-
-#encabezado{
+#encabezado {
     position: relative;
     font-family: sans-serif;
     font-size: 18px;
@@ -62,9 +45,9 @@
     margin: 0px;
     padding: 0px;
     z-index: 1;
-}
+    }
 
-#encabezado::before{
+#encabezado::before {
     content: '';
     position: absolute;
     top: 0;
@@ -78,12 +61,12 @@
     z-index: -1;
 }
 
-a{
+a {
     color: white;
     text-decoration: none;
 }
 
-ul{
+ul {
     font-family: sans-serif;
     background-color: black;
     list-style-type: none;
@@ -93,12 +76,12 @@ ul{
     margin-bottom: 3px;
 }
 
-ul li{
+ul li {
     display: inline;
     margin-right: 20px; 
 }
 
-h3{
+h3 {
     color: white;
     text-align: left;
     background-color: rgb(0, 0, 0);
@@ -110,7 +93,7 @@ h3{
     margin-top: 3px;
 }
 
-h4{
+h4 {
     font-family: Arial, Helvetica, sans-serif;
     padding: 0;
     margin: 0;
