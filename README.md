@@ -6,4 +6,4 @@ Actividades de Programación Web I
 3. [Formularios y metadatos](/03_Formularios/formularios_y_metadatos.html)
 4. [CSS Básico](/04_css_basico/paginaCSS.html)
 5. [CSS Dimensiones](05_css_dimensiones/ejemplo.html)
-6. [CSS_Position](06_css_position/ejemplo.html)
+6. [CSS Position](06_css_position/ejemplo.html)
