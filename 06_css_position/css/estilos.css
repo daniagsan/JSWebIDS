@@ -1,8 +1,20 @@
+.destacado {
+    color: rgb(255, 255, 255);
+    font-size: 70px;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    margin: 0;
+    padding: 0;
+}
+
 .cards-container {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     gap: 10px;
+    padding-top: 3px;
 }
 
 .card {
@@ -56,62 +68,23 @@
     padding: 2px;
 }
 
-a {
-    color: white;
-    text-decoration: none;
-}
 
-.destacado {
-    color: rgb(255, 255, 255);
-    font-size: 70px;
-    font-family: 'Roboto', Helvetica, Arial, sans-serif;
-    font-weight: bold;
-    text-align: center;
+.sticky-bar{
+    font-family: 'Roboto';
+    display: flex;
     background-color: rgb(0, 0, 0);
-    margin: 0;
-    padding: 0;
-}
-
-#encabezado {
-    position: relative;
-    font-family: sans-serif;
-    font-size: 18px;
     text-align: center;
-    color: rgb(0, 0, 0)   ;
-    margin: 0px;
-    padding: 0px;
-    z-index: 1;
-    }
-
-#encabezado::before {
-    content: '';
-    position: absolute;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+    margin-top: 3px;
+    position: sticky;
     top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url(../img/fondods-de-manga.jpg);
-    background-size: cover;
-    background-position: center;
-    opacity: 0.1;
-    z-index: -1;
 }
 
-
-
-ul {
-    font-family: sans-serif;
-    background-color: black;
-    list-style-type: none;
-    text-align: center;
-    padding: 5px;
-    margin-top: 0px;
-    margin-bottom: 3px;
-}
-
-ul li {
-    display: inline;
-    margin-right: 20px; 
+.sticky-bar a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
 }
 
 h3 {
