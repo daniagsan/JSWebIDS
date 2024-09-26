@@ -1,17 +1,7 @@
-.destacado {
-    color: rgb(255, 255, 255);
-    font-size: 70px;
-    font-family: 'Roboto', Helvetica, Arial, sans-serif;
-    font-weight: bold;
-    text-align: center;
-    background-color: rgb(0, 0, 0);
-    margin: 0;
-    padding: 0;
-}
-
-.sticky-bar{
+header {
     font-family: 'Roboto';
     display: flex;
+    flex-direction: column;
     background-color: rgb(0, 0, 0);
     text-align: center;
     align-items: center;
@@ -21,37 +11,58 @@
     top: 0;
 }
 
-.sticky-bar a {
+header h1{
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    margin: 0;
+    padding: 0;
+}
+
+header a {
     display: block;
     color: rgb(255, 255, 255);
     text-decoration: none;
 }
 
-.sticky-bar a:hover {
+header a:hover {
     font-weight: bold;
     background-color: white;
     color: black;
 }
 
-.sticky-bar ul {
-    list-style-type: none;
-    margin: 4px;
+header ul {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 4px;
     gap: 30px;
     flex-wrap: wrap;
+    list-style-type: none;
 }
 
 .submenu {
     display: none;
+    gap: 10px;
+    width: 15%;
     position: absolute;
-    background-color: white;
-    width: 250px;
-    z-index: 90;
-    top: 90%;
+    background-color: black;
     padding: 0;
-    box-shadow: 2px 2px 5px 0 gray;
-    border-radius: 5px;
+}
+
+li:hover .submenu{
+    display: block;
+}
+
+.submenu li {
+    text-align: left;
+    padding: 0;
+    display: block;
+    padding: 10px;
 }
 
 .cards-container {
