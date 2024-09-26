@@ -48,7 +48,7 @@ header ul {
 .submenu {
     display: none;
     gap: 10px;
-    width: 15%;
+    width: 150px;
     position: absolute;
     background-color: black;
     padding: 0;
