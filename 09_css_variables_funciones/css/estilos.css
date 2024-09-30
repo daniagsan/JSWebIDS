@@ -1,0 +1,225 @@
+:root {
+    --fuente: 'Roboto', Arial, sans-serif;
+    --card-width: 150px;
+    --card-heigth: 300px;
+    --h3-degradado: linear-gradient(to bottom, rgb(100, 100, 235), rgb(49, 49, 151));
+}
+
+header {
+    font-family: 'Roboto';
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1{
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    font-family: var(--fuente);
+    font-weight: bold;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    margin: 0;
+    padding: 0;
+}
+
+header a {
+    display: block;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+header a:hover {
+    font-weight: bold;
+    background-color: white;
+    color: black;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 4px;
+    gap: 30px;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+.submenu {
+    display: none;
+    gap: 10px;
+    width: 150px;
+    position: absolute;
+    background-color: black;
+    padding: 0;
+}
+
+li:hover .submenu{
+    display: block;
+    box-shadow: 2px 2px 2px 2px white;
+}
+
+.submenu li {
+    text-align: left;
+    padding: 0;
+    display: block;
+    padding: 10px;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 3px;
+}
+
+.card {
+    width: var(--card-width);
+    height: var(--card-heigth);
+    background: #000000;
+    padding: 5px;
+    margin-bottom: 3px;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.372) 3px 6px 10px;
+    position: relative;
+}
+
+.card p{
+    height: 100px;
+    font-size: smaller;
+    color: white;
+    font-size: 90%;
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    white-space: normal;
+    display: -webkit-box; 
+    -webkit-line-clamp: 6; 
+    -webkit-box-orient: vertical;
+}
+
+.card h3{
+    height: 60px;
+    font-size: 15px;
+    color: black;
+    background-color: white;
+    
+    line-height: 20px;
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    white-space: normal;
+    display: -webkit-box; 
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+
+    position: relative;
+}
+
+
+.img img{
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+}
+
+.img{
+    height: 100px;
+}
+
+.ver-mas-btn{
+    font-family: var(--fuente);
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    text-decoration: none;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 3px;
+    
+}
+
+.card:hover .ver-mas-btn{
+    opacity: 1;
+    padding: 1px;
+    border-radius: 1px;
+    display: inline;
+    padding: 2px;
+    position: absolute;
+    bottom: 0;
+}
+
+h3 {
+    color: white;
+    text-align: left;
+    background-color: rgb(0, 0, 0);
+    font-family: var(--fuente);
+    font-weight: bold;
+    padding: 0;
+    padding-left: 5px;
+    margin-bottom: 3px;
+    margin-top: 0px;
+}
+
+h4 {
+    font-family: var(--fuente);
+    padding: 0;
+    margin: 0;
+}
+
+::placeholder {
+    color: gray;
+    opacity: 0.9;
+}
+
+a {
+    color: black;
+    text-decoration: underline;
+}
+
+input:focus, textarea:focus {
+    outline: 2px solid #ffffff;
+}
+
+form textarea{
+    max-width: 100%;
+    height: 60px;
+    font-family: var(--fuente);
+}
+
+form label{
+    font-family: var(--fuente);
+    color: white;
+    padding: 1%;
+}
+
+form h3{
+    font-size: 30px;
+    text-align: center;
+    font-family: var(--fuente);
+    font-weight: bold;
+    background-color: white;
+    color: black;
+}
+
+form {
+    width: 200px;
+    gap: 5px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    box-shadow: 2px 3px 10px;
+}
