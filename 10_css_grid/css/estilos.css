@@ -6,6 +6,10 @@
     --card-main-image-heigth: 200px;
 }
 
+body {
+    margin: 3px;
+}
+
 .body-grid {
     display: grid;
     grid-template-columns: var(--card-width) 1fr;
@@ -116,7 +120,6 @@ li:hover .submenu{
     padding: 5px;
     margin-bottom: 3px;
     border-radius: 3px;
-    box-shadow: rgba(0, 0, 0, 0.372) 3px 6px 10px;
     position: relative;
 }
 
@@ -195,7 +198,8 @@ li:hover .submenu{
 .rigth-side {
     grid-column: 2; 
     grid-row: 1;
-    padding: 10px;
+    padding-left: 10px;
+    padding-top: 4px;
 }
 
 .main-content-container {
@@ -206,8 +210,15 @@ li:hover .submenu{
 
 .main-content-container h4 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin: 3px;
+    margin: 0px;
     text-align: center;
+}
+
+.main-content-container h3 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0px;
+    text-align: left;
+    color: white;
 }
 
 .card-main {
