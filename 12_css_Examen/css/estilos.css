@@ -216,33 +216,29 @@
         border-radius: 10px;
     }
     
-    /* Ocultar los inputs de radio */
     .carrusel input {
         display: none;
     }
     
-    /* Contenedor de las diapositivas */
     .slides {
         display: flex;
         width: 300%;
         height: 100%;
         transition: transform 0.5s ease-in-out;
+        margin-bottom: 100px;
     }
     
-    /* Estilo individual de cada slide */
     .slide {
         width: 100%;
         flex: 1;
     }
     
-    /* Imagen de cada slide */
     .slide img {
         width: 100%;
         height: 100%;
         object-fit: cover;
     }
     
-    /* Controles de navegación */
     .controls {
         position: absolute;
         bottom: 15px;
@@ -255,26 +251,25 @@
     .controls label {
         width: 15px;
         height: 15px;
-        background-color: white;
+        background-color: rgb(255, 255, 255);
         border-radius: 50%;
         cursor: pointer;
         transition: background-color 0.3s;
     }
     
     .controls label:hover {
-        background-color: lightgray;
+        background-color: rgb(255, 255, 255);
     }
-    
-    /* Logica CSS para cambiar de slide usando los radio buttons */
+
     #slide1:checked ~ .slides {
         transform: translateX(0);
     }
     
     #slide2:checked ~ .slides {
-        transform: translateX(-100%);
+        transform: translateX(-33.3333%);
     }
     
     #slide3:checked ~ .slides {
-        transform: translateX(-200%);
+        transform: translateX(-66.6666%);
     }
     
